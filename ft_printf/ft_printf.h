@@ -6,7 +6,7 @@
 /*   By: mfleury <mfleury@student.42barcelona.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/09 10:20:50 by mfleury           #+#    #+#             */
-/*   Updated: 2024/08/20 11:49:50 by mfleury          ###   ########.fr       */
+/*   Updated: 2025/05/19 23:01:58 by mfleury          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@
 typedef unsigned long long	t_ull;
 typedef unsigned int		t_uint;
 static const char			g_specs[9] = \
-							{'c', 's', 'd', 'i', 'p', 'x', 'X', 'u', '%'};	
+{'c', 's', 'd', 'i', 'p', 'x', 'X', 'u', '%'};
 int		ft_printf(const char *s, ...);
 void	*ft_printf_c(int n, int *cnt);
 char	*ft_printf_s(char *str);
