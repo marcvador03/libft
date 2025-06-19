@@ -15,8 +15,8 @@ In your terminal run "make" in the main directory, which compiles all files and 
 **Additional information**
 
 Check libft.h which shortly describes the purpose of each function developed. For most of them, "man command" will provide you with details on expected behavior. Important note: unlike standard libc functions, I have added checks to avoid Undefined Behaviour (hopefully...)
-ft_printf mimics printf standard C function, but only with simple arguments '%s', '%x', '%d', '%c', '%p', '%u'. 
-get_next_line returns one line at a time from one or multiple Files Descriptors (fd). When EOF is reached, the function returns NULL. 
+ft_printf mimics printf standard C function, but only with simple arguments '%s', '%x', '%d', '%i', '%c', '%p', '%u', '%X'. 
+get_next_line returns one line at a time from one or multiple Files Descriptors (fd). When EOF is reached, the function returns NULL. IMPORTANT: memory must be freed by the user.
 
 
 
