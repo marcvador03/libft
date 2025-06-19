@@ -6,7 +6,7 @@
 /*   By: mfleury <mfleury@student.42barcelona.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/09 10:20:50 by mfleury           #+#    #+#             */
-/*   Updated: 2025/05/19 23:01:58 by mfleury          ###   ########.fr       */
+/*   Updated: 2025/06/19 17:00:21 by mfleury          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,15 @@ typedef unsigned long long	t_ull;
 typedef unsigned int		t_uint;
 static const char			g_specs[9] = \
 {'c', 's', 'd', 'i', 'p', 'x', 'X', 'u', '%'};
+
+/* Function name: ft_printf
+ * @return: number of bytes printed
+ * @description: mimics printf from standard C library, simplified to few
+ * arguments: %c, %s, %d, %i, %p, %x, %X, %u. Memory safe.
+
 int		ft_printf(const char *s, ...);
+
+/*supporting functions*/
 void	*ft_printf_c(int n, int *cnt);
 char	*ft_printf_s(char *str);
 char	*ft_printf_x(t_ull n, char cas);
